@@ -85,9 +85,9 @@ input, select, textarea {
 	body {
 		background: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
+		font-size: 14pt;
 		font-weight: 300;
-		line-height: 1.75em;
+		line-height: 1.5em;
 		color: #888;
 	}
 
@@ -1839,7 +1839,7 @@ input, select, textarea {
 		}
 
 /* Form */
-
+ 
 	form label {
 		display: block;
 		text-align: left;
@@ -1985,19 +1985,23 @@ input, select, textarea {
 /* Item */
 
 	.item {
-		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+		box-shadow: 0.05em 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.05);
 		margin-bottom: 40px;
 	}
 
 		.item header {
 			background: #fff;
 			margin: 0;
-			padding: 1em 0 1em 0;
+			padding: 1em 1em 1em 1em;
 			font-size: 0.8em;
 		}
 
 			.item header h3 {
 				font-size: 1em;
+			}
+
+			.item header h3 span.title {
+				font-weight: 600;
 			}
 
 /* Icons */
@@ -2035,6 +2039,282 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
+
+/* timeline */
+
+.timeline {
+    position: relative;
+    text-align: left;
+	margin-top: 0rem;
+}
+
+.timeline::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 2rem;
+    top: 0;
+}
+
+.timeline__block {
+    position: relative;
+    padding-left: 5rem; /* distance to left line */
+	min-height: 4rem; /* distance to next point */
+}
+
+.timeline__bullet {
+    background: #41484c;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-left: -0.5rem;
+    box-shadow: 0 0 0 9px #c9c9c9;
+    position: absolute;
+    left: 2rem;
+    top: .3rem;
+}
+
+.timeline__ico {
+	left: 2rem;
+	top: 0rem;
+	margin-left: -1rem;
+	position: absolute;
+	height: 2rem;
+	width: 2rem;
+	background: #333;
+	border-radius: 50%;
+	font-size: small;
+	color: #c9c9c9;
+	text-align: center;
+	line-height: 2rem;
+}
+
+.timeline__ico.active {
+	color: #e27689;
+}
+
+.timeline__timeframe {
+    font-size: 1.2rem;
+	font-weight: 500;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: .5rem;
+}
+
+.timeline__place {
+	font-style: italic;
+	font-weight: 500;
+	font-size: .9em;
+    color: #666;
+}
+
+.timeline__header h3 {
+    line-height: 1.25;
+    margin: 0 0 .3rem 0;
+	font-weight: 500;
+	font-size: 1.2em;
+}
+
+.timeline__header h5 {
+    margin-top: 0;
+	padding-bottom: .3rem;
+	font-weight: 300;
+}
+
+.timeline__desc p {
+    margin: 0;
+	font-size: 0.9em;
+	line-height: 150%;
+}
+
+.timeline__desc.hanging p {
+	padding-left: 36px;
+    text-indent: -36px;
+}
+
+.timeline__desc p:last-child {
+	margin-bottom: 2rem; /* space between each icon bullet */
+}
+
+.timeline__desc .timeline__timeframe {
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+}l
+
+.timeline__desc ul {
+	margin-bottom: .5rem;
+}
+
+.timeline__desc ul li {
+	font-size: 0.9em;
+	line-height: 150%;
+	margin-bottom: .2rem; 
+}
+
+/* skillbars */
+
+ .skill-bars {
+    list-style: none;
+    margin: 4rem 0 2rem;
+}
+
+.skill-bars li {
+    height: .6rem;
+    background: #c9c9c9;
+    width: 100%;
+    margin-bottom: 3em;
+    padding: 0;
+    position: relative;
+}
+
+.skill-bars li strong {
+    position: absolute;
+    left: 0;
+    top: -2.75rem;
+    /* text-transform: uppercase; */
+    /* letter-spacing: .2rem; */
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.skill-bars .icon {
+	color: #3c8dbc;
+}
+
+.skill-bars li .progress {
+    background: #000000;
+    background-image: linear-gradient(to right, #3c8dbc, #41484c);
+    position: relative;
+    height: 100%;
+}
+
+.skill-bars li .progress span {
+    position: absolute;
+    right: 0;
+    top: -2.4rem;
+    display: block;
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 0.6;
+    background: #41484c;
+    padding: .6rem .6rem;
+    border-radius: 3px;
+}
+
+.skill-bars li .progress span::after {
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    margin-left: -5px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #41484c;
+    content: "";
+}
+
+.skill-bars li .percent5 {
+    width: 5%;
+}
+
+.skill-bars li .percent10 {
+    width: 10%;
+}
+
+.skill-bars li .percent15 {
+    width: 15%;
+}
+
+.skill-bars li .percent20 {
+    width: 20%;
+}
+
+.skill-bars li .percent25 {
+    width: 25%;
+}
+
+.skill-bars li .percent30 {
+    width: 30%;
+}
+
+.skill-bars li .percent35 {
+    width: 35%;
+}
+
+.skill-bars li .percent40 {
+    width: 40%;
+}
+
+.skill-bars li .percent45 {
+    width: 45%;
+}
+
+.skill-bars li .percent50 {
+    width: 50%;
+}
+
+.skill-bars li .percent55 {
+    width: 55%;
+}
+
+.skill-bars li .percent60 {
+    width: 60%;
+}
+
+.skill-bars li .percent65 {
+    width: 65%;
+}
+
+.skill-bars li .percent70 {
+    width: 70%;
+}
+
+.skill-bars li .percent75 {
+    width: 75%;
+}
+
+.skill-bars li .percent80 {
+    width: 80%;
+}
+
+.skill-bars li .percent85 {
+    width: 85%;
+}
+
+.skill-bars li .percent90 {
+    width: 90%;
+}
+
+.skill-bars li .percent95 {
+    width: 95%;
+}
+
+.skill-bars li .percent100 {
+    width: 100%;
+}
+
+/* Skills */
+
+.skills-bullets {
+	margin-bottom: 1.5rem;
+	/* color: #666; */
+}
+
+.skills ul {
+	text-align: left;
+	font-size: 1em;
+	font-weight: 380;
+	margin-bottom: 0.5rem; 
+}
+
+.skills ul ul {
+	font-size: 0.8em;
+	list-style: circle;
+}
 
 /* Header */
 
@@ -2246,6 +2526,10 @@ input, select, textarea {
 						border-bottom-color: rgba(255, 255, 255, 0);
 					}
 
+			#main > section.white {
+				background-color: white;
+			}
+
 			#main > section.cover {
 				padding: 10em 0;
 				background-size: cover;
@@ -2256,6 +2540,7 @@ input, select, textarea {
 				background-color: #81918E;
 				background-image: url("../../images/banner.jpg");
 				text-align: left;
+				text-shadow: 2px 2px 5px black;
 			}
 
 			#main > section.two {
@@ -2263,17 +2548,11 @@ input, select, textarea {
 			}
 
 			#main > section.three {
-				/* background-color: #ecf1f1; */
-				background-color: white;
+				background-color: #ecf1f1;
 			}
 
 			#main > section.four {
 				background-color: #e8edec;
-			}
-			
-			/* added this */
-			#main > section.five {
-				background-color: #f5fafa;
 			}
 
 /* Wide */
