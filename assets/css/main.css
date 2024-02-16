@@ -194,6 +194,7 @@ input, select, textarea {
 	hr {
 		border: 0;
 		border-top: solid 1px #ddd;
+		margin: 1.5em 0 1.5em 0;
 	}
 
 	blockquote {
@@ -210,6 +211,11 @@ input, select, textarea {
 		clear: both;
 	}
 
+	.defined-term {
+		color: #E27689;
+		font-style: italic;
+	}
+
 /* Container */
 
 	.container {
@@ -218,8 +224,13 @@ input, select, textarea {
 		width: 1400px;
 	}
 
+	.container.only-shiny {
+		margin: 20px auto !important;
+		width: 95%;
+	}
+
 	#intro-container {
-		margin: 80px ;
+		margin: 80px;
 		width: 70%;
 	}
 
@@ -1952,7 +1963,8 @@ input, select, textarea {
 		border-radius: 0.35em;
 		color: #fff !important;
 		text-decoration: none;
-		padding: 0.75em 2.5em 0.75em 2.5em;
+		padding: 0.5em 1.5em 0.5em 1.5em;
+		margin: 0.15em 0em 0.15em 0em;
 		background-color: #8ebebc;
 		border: 0;
 		cursor: pointer;
@@ -2013,7 +2025,7 @@ input, select, textarea {
 	}
 	
 	.item .image img {
-		border-bottom: .1px dotted #999;
+		border-bottom: .5px solid #888;
 	}
 
 		.item header {
@@ -2112,10 +2124,11 @@ input, select, textarea {
 	position: absolute;
 	height: 2rem;
 	width: 2rem;
-	background: #333;
-	border-radius: 50%;
+	background-color: #333;
+	border-radius: 100%;
+	display: inline-block;
 	font-size: small;
-	color: #c9c9c9;
+	color: #fff;
 	text-align: center;
 	line-height: 2rem;
 }
@@ -2528,7 +2541,7 @@ input, select, textarea {
 			padding: 4em 0;
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
-			/* background-image: url("images/overlay.png"); */
+			background-image: url("images/overlay.png");
 		}
 
 			#main > section.dark {
@@ -2556,12 +2569,17 @@ input, select, textarea {
 
 			#main > section.white {
 				background-color: white;
+				background-image: none;
 			}
 
 			#main > section.cover {
 				padding: 10em 0;
 				background-size: cover;
 				background-position: center center;
+			}
+
+			#main > section.section-shiny {
+				padding: 0;
 			}
 
 			#main > section.one {
@@ -2923,12 +2941,13 @@ input, select, textarea {
 			}
 
 			.skills-bullets ul {
-				padding-left: 3em;
-				padding-right: 3em;
+				padding-left: 2em;
+				padding-right: 2em;
 			}
 
 			ul.skill-bars {
-				padding-left: 2em;padding-right: 2em;
+				padding-left: 2em;
+				padding-right: 2em;
 			}
 
 		/* Main */
