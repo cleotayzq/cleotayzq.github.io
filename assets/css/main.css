@@ -2399,7 +2399,7 @@ input, select, textarea {
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
 			padding: 1.5em 0 0.75em 0;
-			font-size: 1.2em;
+			font-size: 1.1em;
 		}
 
 			#header .bottom > :last-child {
@@ -2940,7 +2940,7 @@ input, select, textarea {
 			}
 
 			.container {
-				padding: 0 15px 0 15px;
+				padding: 0 20px 0 20px;
 			}
 
 		/* List */
