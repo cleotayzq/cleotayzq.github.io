@@ -2399,6 +2399,7 @@ input, select, textarea {
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
 			padding: 1.5em 0 0.75em 0;
+			font-size: 1.25em;
 		}
 
 			#header .bottom > :last-child {
@@ -2433,7 +2434,7 @@ input, select, textarea {
 			position: relative;
 			color: #fff;
 			font-weight: 600;
-			font-size: 1em;
+			font-size: 1.2em;
 			line-height: 1em;
 		}
 
@@ -2456,6 +2457,7 @@ input, select, textarea {
 		list-style: none;
 		padding-left: 0;
 		margin-bottom: 0;
+		font-size: 1.2em;
 	}
 
 		#nav ul li {
@@ -2793,6 +2795,7 @@ input, select, textarea {
 					padding-top: 2em;
 					margin-top: 2em;
 					position: relative;
+					font-size: 1.25em;
 				}
 
 			#logo {
