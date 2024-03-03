@@ -125,18 +125,11 @@
 	foo.poptrox({
 		
 		overlayOpacity: 0.5,
-		usePopupCaption: true,
-		caption: {selector: "h4"},
-		popupBackgroundColor: '#f5fafa'
+		// usePopupCaption: true,
+		// caption: {selector: 'h4'},
+		// popupBackgroundColor: '#f5fafa',
+		windowMargin: 0,
+		// usePopupDefaultStyling: false
 	});
-
-	// Hack: Set margins to 0 when 'xsmall' activates.
-		breakpoints.on('<=xsmall', function() {
-			$main[0]._poptrox.windowMargin = 0;
-		});
-
-		breakpoints.on('>xsmall', function() {
-			$main[0]._poptrox.windowMargin = 50;
-		});
 
 })(jQuery);

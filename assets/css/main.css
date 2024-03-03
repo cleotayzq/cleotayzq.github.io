@@ -236,6 +236,10 @@ input, select, textarea {
 		width: 70%;
 	}
 
+	#intro-down {
+		margin-top: 2em;
+	}
+
 		@media screen and (min-width: 961px) and (max-width: 1880px) {
 
 			.container {
@@ -1965,7 +1969,7 @@ input, select, textarea {
 		border-radius: 0.35em;
 		color: #fff !important;
 		text-decoration: none;
-		padding: 0.5em 1.5em 0.5em 1.5em;
+		padding: 0.5em 1em 0.5em 1em;
 		margin: 0.15em 0em 0.15em 0em;
 		background-color: #8ebebc;
 		border: 0;
@@ -1995,6 +1999,34 @@ input, select, textarea {
 		.button:active {
 			background-color: #7eaeac;
 		}
+	
+		input[type="button"].style2,
+		input[type="submit"].style2,
+		input[type="reset"].style2,
+		.button.style2,
+		button.style2 {
+			background-color: rgba(229, 230, 231, 0.1);
+			border: solid 1px #e5e6e7;
+			text-shadow: none !important;
+
+		}
+
+			input[type="button"].style2:hover,
+			input[type="submit"].style2:hover,
+			input[type="reset"].style2:hover,
+			.button.style2:hover,
+			button.style2:hover {
+				background-color: rgba(229, 230, 231, 0.25);
+				border: solid 1px #e5e6e7 !important;
+			}
+
+			input[type="button"].style2:active,
+			input[type="submit"].style2:active,
+			input[type="reset"].style2:active,
+			.button.style2:active,
+			button.style2:active {
+				background-color: rgba(229, 230, 231, 0.375);
+			}
 
 /* Item */
 
@@ -2360,8 +2392,12 @@ input, select, textarea {
 
 /* poptrox */
 
-/* .poptrox-popup .caption {
-	position: static;
+/* @media screen and (max-width: 736px) {
+
+	.poptrox-popup .caption {
+		display: none !important;
+	}
+
 } */
 
 /* Header */
@@ -2582,7 +2618,7 @@ input, select, textarea {
 			}
 
 			#main > section.cover {
-				padding: 10em 0;
+				padding: 8em 0;
 				background-size: cover;
 				background-position: center center;
 			}
@@ -2651,7 +2687,7 @@ input, select, textarea {
 			}
 
 			#main section.cover {
-				padding: 5em 0;
+				padding: 8em 0;
 			}
 
 	}
@@ -2709,7 +2745,7 @@ input, select, textarea {
 						margin-left: -1.25em;
 						line-height: 2.25em;
 					}
-					
+
 			#header .bottom {
 				font-size: 0.9em;
 			}
@@ -2924,7 +2960,7 @@ input, select, textarea {
 				}
 
 				#main section.cover {
-					padding: 4em 0;
+					padding: 8em 0;
 				}
 
 	}
@@ -2973,7 +3009,7 @@ input, select, textarea {
 			}
 
 			#main section.cover {
-				padding: 4em 0em;
+				padding: 8em 0em;
 			}
 
 				#main section.cover header {
