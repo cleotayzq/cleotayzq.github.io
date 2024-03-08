@@ -2392,12 +2392,22 @@ input, select, textarea {
 
 /* poptrox */
 
-/* @media screen and (max-width: 736px) {
-
-	.poptrox-popup .caption {
-		display: none !important;
-	}
-
+/* .poptrox-popup .closer {
+	-moz-transition: opacity 0.2s ease-in-out;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-ms-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
+	background-image: url("images/close.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 3em;
+	height: 5em;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 5em;
+	z-index: 2;
 } */
 
 /* Header */

@@ -121,14 +121,14 @@
 				});
 	
 	// Poptrox
-	var foo = $('#conference-posters');
+	var foo = $('.poptrox-me');
 	foo.poptrox({
 		
 		overlayOpacity: 0.5,
 		// usePopupCaption: true,
 		// caption: {selector: 'h4'},
 		// popupBackgroundColor: '#f5fafa',
-		windowMargin: 0,
+		windowMargin: 48,
 		// usePopupDefaultStyling: false
 	});
 
