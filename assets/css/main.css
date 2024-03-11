@@ -2600,8 +2600,8 @@ input, select, textarea {
 		}
 
 			#main > section.dark {
-				color: #ddd;
-				color: rgba(255, 255, 255, 0.75);
+				color: #fff;
+				color: rgba(255, 255, 255, 0.9);
 			}
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
@@ -2637,6 +2637,43 @@ input, select, textarea {
 				padding: 0;
 			}
 
+			#main > section.study-title {
+				background-color: #555;
+				background-size: contain; 
+				background-position: center bottom;
+				background-repeat: no-repeat;
+				min-height: 28vw; 
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				
+			}
+
+				#main > section.study-title * {
+					color: #eee;
+				}
+				
+
+				#main > section.study-title > .container {
+					width: 40%;
+				}
+
+				section.study-title .custom-line-container {
+					display: flex;
+					justify-content: center;
+					margin: 0.8em;
+				}
+				
+				.custom-line-container > .custom-line {
+					width: 10%;
+					height: 1px;
+					background-color: #eee;
+				}	
+
+				#main > section.study-title#tay2024-title {
+					background-image: url("../../images/banner-tay2024.png");
+				}
+
 			#main > section.one {
 				background-color: #81918E;
 				background-image: url("../../images/banner.jpg");
@@ -2649,11 +2686,11 @@ input, select, textarea {
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background-color: #edf3f3;
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: #eaefee;
 			}
 
 /* Wide */
