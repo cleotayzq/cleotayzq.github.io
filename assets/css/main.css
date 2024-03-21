@@ -2646,7 +2646,6 @@ input, select, textarea {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				
 			}
 
 				#main > section.study-title * {
@@ -2654,21 +2653,25 @@ input, select, textarea {
 				}
 				
 
-				#main > section.study-title > .container {
+				#main > section.study-title > .container .study-subtitle {
 					width: 40%;
+					display: flex;
+					align-items: center;
+					flex-direction: column;
+					text-align: center;
 				}
 
 				section.study-title .custom-line-container {
 					display: flex;
 					justify-content: center;
-					margin: 0.8em;
+					margin: 0.3em;
 				}
 				
-				.custom-line-container > .custom-line {
+				/* .custom-line-container .custom-line {
 					width: 10%;
 					height: 1px;
-					background-color: #eee;
-				}	
+					background-color: #eee !important;
+				}	 */
 
 				#main > section.study-title#tay2024-title {
 					background-image: url("../../images/banner-tay2024.png");
